@@ -15,7 +15,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
 import Cronometer from './Cronometer.vue';
-import ITarefa from '../interfaces/ITask'
+import ITask from '../interfaces/ITask'
 import Box from './Box.vue'
 
 export default defineComponent({
@@ -26,7 +26,7 @@ export default defineComponent({
   },
   props: {
     task: {
-      type: Object as PropType<ITarefa>,
+      type: Object as PropType<ITask>,
       required: true
     }
   }
