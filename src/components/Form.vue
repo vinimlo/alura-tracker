@@ -1,8 +1,8 @@
 <template>
   <div class="box form-container">
     <div class="columns">
-      <div class="column" role="form" aria-label="Formulário para a criação de uma nova tarefa">
-        <input type="text" class="input" placeholder="Qual tarefa você deseja iniciar?" v-model="taskDescription">
+      <div class="column" role="form" aria-label="Form to create a new task">
+        <input type="text" class="input" placeholder="Describe the activity you're about to start" v-model="taskDescription">
       </div>
       <div class="column">
         <Timer @timerFinished="finishTask" />
